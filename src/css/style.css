@@ -90,8 +90,6 @@
 
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
 }
 
 img {
@@ -102,13 +100,6 @@ body {
   font-family: var(--bs-body-font-family);
   font-size: 18px;
   margin: 0;
-  line-height:1.5;
-}
-
-.disclaimer{
-  padding: 0 20px;
-  /* background: var(--bs-gray-100); */
-  font-size:14px;
 }
 
 a:link,
@@ -147,6 +138,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
 .site-title > span {
   font-size: 1rem;
   margin-left: 0.3em;
@@ -162,8 +154,8 @@ a:hover {
   border-right: 13px solid transparent;
 }
 
-/* Utility styles */
 
+/* Utility styles */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -177,16 +169,23 @@ a:hover {
   overflow: hidden;
 }
 
+.disclaimer{
+  padding: 0 20px;
+}
+
 svg {
   background-color: var(--bs-black);
   fill: white;
 }
 
-/* 追加 */
 
+/* 追加 */
+/* Global navbar */
 .global-header{
   background-color: var(--bs-black);
   display: flex;
+  color: var(--bs-light);
+  fill: var(--bs-light);
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
@@ -195,8 +194,7 @@ svg {
 .icon{
   width: 20px;
   height:20px;
-  fill:currentColor;
-  color:var(--bs-light);
+  /* clor:var(--bs-light); */
 }
 
 .site-title{
@@ -212,6 +210,7 @@ svg {
   margin-left:10px;
 }
 
+/* manu */
 #global-nav-toggle{
   background-color: transparent;
   color: var(--bs-light);
@@ -235,6 +234,8 @@ svg {
   border-right: solid 1px var(--bs-gray-600);
 }
 
+
+/* Park Header */
 #park-header{
   background-image: url('../images/yellowstone.jpg');
   min-height: 600px;
@@ -244,10 +245,8 @@ svg {
   position: relative;
 }
 
-
 /* bottom part */
 .park-nav{
-  margin-top: 480px;
   background: var(--bs-black);
   padding: 8px 0;
 }
@@ -287,33 +286,41 @@ svg {
 }
 
 
-/* hero-banner */
+/* Hero Banner */
+.hero-banner{
+  display: grid;
+}
+
 .hero-banner__content{
-  background-color: rgba(0, 0, 0, 0.5);
-  position:absolute;
-  bottom:90px;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
   left:0;
   right:0;
   color:var(--bs-light);
   padding: 13px 40px;
 }
 
+.hero-banner__subtitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem; 
+}
+
 .hero-banner a{
   color:var(--bs-light);
   text-decoration: none;
-  font-size: 40px;
-  margin-bottom:8px;
-  font-weight: normal;
+  font-size: 33px;
+  /* margin-bottom:8px;
+  font-weight: normal; */
 }
 
 .hero-banner p{
-  color:var(--bs-light);
-  font-size:20px;
-  margin-left:280px;
+  margin-left:230px;
 }
 
-.hero-banner span{
+/* .hero-banner span{
   margin-right: 16px;
   font-size: 15px;
   display: flex;
-}
+} */
+
