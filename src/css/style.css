@@ -246,7 +246,6 @@ svg {
 
 
 /* bottom part */
-
 .park-nav{
   margin-top: 480px;
   background: var(--bs-black);
@@ -289,9 +288,7 @@ svg {
 
 
 /* hero-banner */
-
 .hero-banner__content{
-  /* margin-top: 350px; */
   background-color: rgba(0, 0, 0, 0.5);
   position:absolute;
   bottom:90px;
@@ -299,7 +296,6 @@ svg {
   right:0;
   color:var(--bs-light);
   padding: 13px 40px;
-  /* padding-left: 40px; */
 }
 
 .hero-banner a{
@@ -308,7 +304,6 @@ svg {
   font-size: 40px;
   margin-bottom:8px;
   font-weight: normal;
-  /* padding-left: 40px; */
 }
 
 .hero-banner p{
@@ -320,4 +315,5 @@ svg {
 .hero-banner span{
   margin-right: 16px;
   font-size: 15px;
+  display: flex;
 }
