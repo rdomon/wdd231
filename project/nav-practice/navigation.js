@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // オーバーレイのクリックイベント (Overlay click events)
+    // オーバーレイのクリックイベント (Overlay click event)
     overlay.addEventListener('click', () => {
       if (overlay.classList.contains('open')) {
         closeMenu();
