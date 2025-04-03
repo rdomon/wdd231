@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Nom Nom List</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1 class="title">Nom Nom List</h1></a>
+      <div class="headerInfo">
+        <form id="search">
+          <input type="text" class="search" placeholder="Search..." />
+          <button type="submit" id="searchBtn">
+            <img
+              src="/images/magnifying-glass-8079542_1280.jpg"
+              alt="search magnifying glass"
+              id="searchImg"
+            />
+          </button>
+        </form>
+        <div class="hamburger-icon" id="hamburgerIcon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="navbar" id="hamburgerMenu">
+          <nav>
+            <a href="/">All Recipes</a>
+            <!-- <a href="/shoppingList.html">Shopping List</a> -->
+            <a href="/shoppingList.html">Shopping List</a>
+            <a href="/search.html">Search Recipes</a>
+            <a href="/about.html">About Us</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+          <section class="about-section">
+              <div class="about-image">
+                  <img src="/api/placeholder/600/800" alt="About Me">
+              </div>
+              <div class="about-text">
+                  <h1>Hello, I'm Sarah</h1>
+                  <p>Welcome to NomNomList! I'm a passionate food enthusiast, home cook, and recipe developer based in Portland, Oregon. My culinary journey began in my grandmother's kitchen when I was just tall enough to reach the counter.</p>
+                  
+                  <p>After spending 5 years working in various restaurants and completing culinary school, I decided to share my love for food through this blog. NomNomList is where I document my culinary adventures, share my favorite recipes, and connect with fellow food lovers around the world.</p>
+                  
+                  <p>My cooking philosophy is simple: use fresh, seasonal ingredients and let them shine. I believe that cooking should be fun, approachable, and result in delicious meals that bring people together.</p>
+                  
+                  <div class="interests">
+                      <h2>My Culinary Interests</h2>
+                      <div class="interests-list">
+                          <span class="interest-tag"><i class="fas fa-leaf"></i> Farm-to-Table</span>
+                          <span class="interest-tag"><i class="fas fa-globe-americas"></i> Global Cuisines</span>
+                          <span class="interest-tag"><i class="fas fa-bread-slice"></i> Artisan Baking</span>
+                          <span class="interest-tag"><i class="fas fa-seedling"></i> Sustainable Cooking</span>
+                          <span class="interest-tag"><i class="fas fa-utensils"></i> Food Photography</span>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <section class="suggestion-form">
+              <h2>Share Your Suggestions</h2>
+              <div class="success-message" id="success-message">
+                  Thank you for your suggestion! I appreciate your feedback.
+              </div>
+              <form id="suggestionForm">
+                  <div class="form-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="name" class="form-control" required>
+                      <div class="error-message" id="name-error">Please enter your name</div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="email">Your Email</label>
+                      <input type="email" id="email" class="form-control" required>
+                      <div class="error-message" id="email-error">Please enter a valid email address</div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="category">Suggestion Category</label>
+                      <select id="category" class="form-control" required>
+                          <option value="">Select a category</option>
+                          <option value="recipe">Recipe Idea</option>
+                          <option value="content">Content Suggestion</option>
+                          <option value="feedback">General Feedback</option>
+                          <option value="collaboration">Collaboration Opportunity</option>
+                      </select>
+                      <div class="error-message" id="category-error">Please select a category</div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="suggestion">Your Suggestion</label>
+                      <textarea id="suggestion" class="form-control" required></textarea>
+                      <div class="error-message" id="suggestion-error">Please enter your suggestion</div>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-block">Submit Suggestion</button>
+              </form>
+          </section>
+
+          <section class="social-links">
+              <h2>Connect With Me</h2>
+              <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              </div>
+          </section>
+      </div>
+  </main>
+
+
+
+    <footer>
+      <p>&copy; 2025 Grocery Organizer</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="/images/facebook2.png" />
+        </a>
+        <a href="https://www.pinterest.com" target="_blank">
+          <img src="/images/pinterest1.png" alt="Pinterest" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="/images/instgram2.jpeg" alt="Instagram" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

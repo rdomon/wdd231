@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - NomNomList</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="aboutUs.css" />
+
+    <!-- <style>
+        :root {
+            --pink: #FFCAD4;
+            --light-pink: #F3E9F1;
+            --cream: #FFF8E8;
+            --secondary-pink: #F7D1CD;
+            --grey: #696969;
+            --black: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        /* body {
+            background-color: var(--cream);
+            color: var(--black);
+            line-height: 1.6;
+        } */
+        body {
+        margin: 0;
+        font-family: var(--bs-body-font-family);
+        font-size: var(--bs-body-font-size);
+        font-weight: var(--bs-body-font-weight);
+        line-height: var(--bs-body-line-height);
+        color: var(--bs-body-color);
+        text-align: var(--bs-body-text-align);
+        background-color: var(--bs-body-bg);
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;       
+        }
+
+        body {
+        --tfc-dark-mode-text-primary: #e4e4e7;
+        --tfc-dark-mode-text-secondary: #71717a;
+        --tfc-dark-mode-bg-primary: #27272a;
+        --tfc-dark-mode-bg-primary-2: #3f3f46;
+        --tfc-dark-mode-bg-secondary: #52525b;
+        --tfc-sidebar-width: 288px;
+        }   
+        
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0c7ae;
+            padding: 20px;
+            flex-wrap: wrap;
+            box-shadow: 0 0 13px 11px #0000004d;
+            z-index: 2;
+
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--pink);
+            letter-spacing: 1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--pink);
+        }
+        
+        .main-content {
+            padding: 4rem 0;
+        }
+        
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .about-image {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
+        
+        .about-text h1 {
+            /* font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--pink);
+            font-weight: 700;
+            letter-spacing: 1px; */
+            font-size: 3.2em;
+            line-height: 1.1;
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: var(--grey);
+            line-height: 1.8;
+        }
+        
+        .interests {
+            margin-top: 2rem;
+        }
+        
+        .interests h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-pink);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        
+        .interest-tag {
+            background-color: var(--light-pink);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--black);
+        }
+        
+        .interest-tag i {
+            margin-right: 0.5rem;
+            color: var(--pink);
+        }
+        
+        .suggestion-form {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .suggestion-form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--pink);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--grey);
+            font-size: 0.95rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #fafafa;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: none;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--pink);
+            box-shadow: 0 0 0 3px rgba(255, 202, 212, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--pink);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn:hover {
+            background-color: #ffa9b7;
+            transform: translateY(-2px);
+        }
+        
+        .btn-block {
+            width: 100%;
+        }
+        
+        .social-links {
+            margin-top: 2rem;
+            text-align: center;
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .social-links h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--pink);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--light-pink);
+            border-radius: 50%;
+            color: var(--pink);
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--pink);
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            background-color: white;
+            color: var(--grey);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 1px solid #f0f0f0;
+            font-size: 0.9rem;
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            background-color: #d1f7e0;
+            color: #2ecc71;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+                padding: 1.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .about-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .suggestion-form, .social-links {
+                padding: 1.5rem;
+            }
+            
+            .suggestion-form h2, .social-links h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <header>
+        <div class="container">
+            <nav>
+                <div class="logo">NomNomList</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
+
+
+    <!-- <header>
+      <a href='/'><h1 class="title">Nom Nom List</h1></a>
+      <div class="headerInfo">
+        <div class="hamburger-icon" id="hamburgerIcon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="navbar" id="hamburgerMenu">
+          <nav>
+            <a href="/">All Recipes</a>
+            <a href='/shoppinglist'>Shopping List</a>
+            <a href='/search'>Search Recipes</a>
+            <a href="/about.html">About Us</a>
+          </nav>
+        </div>
+      </div>
+    </header> -->
+
+
+
+
+
+    <header>
+        <h1 class="title">Nom Nom List</h1>
+        <div class="headerInfo">
+          <form id="search">
+            <input type="text" class="search" />
+            <button type="submit" id="searchBtn">
+              <img
+                src="images/magnifying-glass-8079542_1280.jpg"
+                alt="search magnifying glass"
+                id="searchImg"
+              />
+            </button>
+          </form>
+          <div id="hamburger">
+            <nav class="navbar">
+              <a href="/index.html">All Recipes</a>
+  
+              <a href="/public/shoppingList.html">Shopping List</a>
+              <a href="/public/search.html">Search Recipes</a>
+              <a href="/public/aboutUs.html">About Us</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+      
+    <main class="main-content">
+        <div class="container">
+            <section class="about-section">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/800" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h1>Hello, I'm Sarah</h1>
+                    <p>Welcome to NomNomList! I'm a passionate food enthusiast, home cook, and recipe developer based in Portland, Oregon. My culinary journey began in my grandmother's kitchen when I was just tall enough to reach the counter.</p>
+                    
+                    <p>After spending 5 years working in various restaurants and completing culinary school, I decided to share my love for food through this blog. NomNomList is where I document my culinary adventures, share my favorite recipes, and connect with fellow food lovers around the world.</p>
+                    
+                    <p>My cooking philosophy is simple: use fresh, seasonal ingredients and let them shine. I believe that cooking should be fun, approachable, and result in delicious meals that bring people together.</p>
+                    
+                    <div class="interests">
+                        <h2>My Culinary Interests</h2>
+                        <div class="interests-list">
+                            <span class="interest-tag"><i class="fas fa-leaf"></i> Farm-to-Table</span>
+                            <span class="interest-tag"><i class="fas fa-globe-americas"></i> Global Cuisines</span>
+                            <span class="interest-tag"><i class="fas fa-bread-slice"></i> Artisan Baking</span>
+                            <span class="interest-tag"><i class="fas fa-seedling"></i> Sustainable Cooking</span>
+                            <span class="interest-tag"><i class="fas fa-utensils"></i> Food Photography</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="suggestion-form">
+                <h2>Share Your Suggestions</h2>
+                <div class="success-message" id="success-message">
+                    Thank you for your suggestion! I appreciate your feedback.
+                </div>
+                <form id="suggestionForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                        <div class="error-message" id="name-error">Please enter your name</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                        <div class="error-message" id="email-error">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Suggestion Category</label>
+                        <select id="category" class="form-control" required>
+                            <option value="">Select a category</option>
+                            <option value="recipe">Recipe Idea</option>
+                            <option value="content">Content Suggestion</option>
+                            <option value="feedback">General Feedback</option>
+                            <option value="collaboration">Collaboration Opportunity</option>
+                        </select>
+                        <div class="error-message" id="category-error">Please select a category</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="suggestion">Your Suggestion</label>
+                        <textarea id="suggestion" class="form-control" required></textarea>
+                        <div class="error-message" id="suggestion-error">Please enter your suggestion</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-block">Submit Suggestion</button>
+                </form>
+            </section>
+
+            <section class="social-links">
+                <h2>Connect With Me</h2>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NomNomList. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('suggestionForm');
+            const successMessage = document.getElementById('success-message');
+            
+            // Validation function
+            function validateForm() {
+                let isValid = true;
+                
+                // Name validation
+                const name = document.getElementById('name');
+                const nameError = document.getElementById('name-error');
+                if (name.value.trim() === '') {
+                    nameError.style.display = 'block';
+                    name.style.borderColor = '#e74c3c';
+                    isValid = false;
+                } else {
+                    nameError.style.display = 'none';
+                    name.style.borderColor = '#f0f0f0';
+                }
+                
+                // Email validation
+                const email = document.getElementById('email');
+                const emailError = document.getElementById('email-error');
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email.value.trim())) {
+                    emailError.style.display = 'block';
+                    email.style.borderColor = '#e74c3c';
+                    isValid = false;
+                } else {
+                    emailError.style.display = 'none';
+                    email.style.borderColor = '#f0f0f0';
+                }
+                
+                // Category validation
+                const category = document.getElementById('category');
+                const categoryError = document.getElementById('category-error');
+                if (category.value === '') {
+                    categoryError.style.display = 'block';
+                    category.style.borderColor = '#e74c3c';
+                    isValid = false;
+                } else {
+                    categoryError.style.display = 'none';
+                    category.style.borderColor = '#f0f0f0';
+                }
+                
+                // Suggestion validation
+                const suggestion = document.getElementById('suggestion');
+                const suggestionError = document.getElementById('suggestion-error');
+                if (suggestion.value.trim() === '') {
+                    suggestionError.style.display = 'block';
+                    suggestion.style.borderColor = '#e74c3c';
+                    isValid = false;
+                } else {
+                    suggestionError.style.display = 'none';
+                    suggestion.style.borderColor = '#f0f0f0';
+                }
+                
+                return isValid;
+            }
+            
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateForm()) {
+                    // In a real implementation, you would send the form data to a server
+                    // For now, we'll just show the success message
+                    successMessage.style.display = 'block';
+                    form.reset();
+                    
+                    // Hide the success message after 5 seconds
+                    setTimeout(function() {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                }
+            });
+            
+            // Real-time validation on input
+            const inputs = form.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    const id = this.id;
+                    const errorElement = document.getElementById(`${id}-error`);
+                    
+                    if (id === 'email') {
+                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailPattern.test(this.value.trim()) && this.value.trim() !== '') {
+                            errorElement.style.display = 'block';
+                            this.style.borderColor = '#e74c3c';
+                        } else {
+                            errorElement.style.display = 'none';
+                            this.style.borderColor = '#f0f0f0';
+                        }
+                    } else {
+                        if (this.value.trim() === '') {
+                            errorElement.style.display = 'block';
+                            this.style.borderColor = '#e74c3c';
+                        } else {
+                            errorElement.style.display = 'none';
+                            this.style.borderColor = '#f0f0f0';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
